@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gfamaral.startlist.AdicionarAtleta"
+    tools:showIn="@layout/activity_adicionar_atleta">
+
+
+    <EditText
+        android:id="@+id/editText_AtletaNome"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_AtletaAno"
+        android:layout_width="92dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="AAAA"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AtletaNome" />
+
+    <EditText
+        android:id="@+id/editText_AtletaMes"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editText_AtletaAno"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AtletaNome" />
+
+    <EditText
+        android:id="@+id/editText_AtletaDia"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editText_AtletaMes"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AtletaNome" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView_EscalNome"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Escalão"
+        android:text="Escalão"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AtletaAno" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView_GenNome"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Género"
+        android:text="Género"
+        app:layout_constraintStart_toEndOf="@+id/multiAutoCompleteTextView_EscalNome"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AtletaAno" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView_PaisNome"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Nacionalidade"
+        android:text="Nacionalidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView_EscalNome" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView_ClubeNomeComp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Clube"
+        android:text="Clube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView_PaisNome" />
+
+</android.support.constraint.ConstraintLayout>
