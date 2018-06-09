@@ -16,4 +16,14 @@
 
     <include layout="@layout/content_main" />
 
+    <Button
+        android:id="@+id/buttonAdicionarAtleta"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_centerHorizontal="True"
+        android:text="Adicionar Atleta"
+        tools:text="Adicionar Atleta" />
+
 </android.support.design.widget.CoordinatorLayout>
